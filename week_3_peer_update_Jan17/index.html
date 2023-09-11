@@ -1,23 +1,19 @@
 <html>
-	<head>
-		<title>Image Gallery</title>
 
-		<!-- import bootstrap -->
-		<link rel="stylesheet"
-			  type="text/css"
-			  href="bootstrap.css"
-		      />
+<head>
+	<title>Image Gallery</title>
 
-		<!-- import our own stylesheet -->
-		<link rel="stylesheet"
-			  type="text/css"
-			  href="styles.css"
-		      />	
+	<!-- import bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.css" />
 
-		<!-- import jQuery -->
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	</head>
-	<body>
+	<!-- import our own stylesheet -->
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<!-- import jQuery -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
 	<div class="container">
 		<h1>Image Gallery</h1>
 
@@ -31,24 +27,16 @@
 		-->
 		<div class="row">
 			<div class="col-md-3">
-				<img class="crop-img" 
-				  src="img_1.jpg" 
-				  alt="graffittied building"/> 
+				<img class="crop-img" src="img_6.jpg" alt="black car" />
 			</div>
 			<div class="col-md-3">
-				<img class="crop-img" 
-				  src="img_2.jpg" 
-				  alt="display of cheese"/> 
+				<img class="crop-img" src="img_7.jpg" alt="trains" />
 			</div>
 			<div class="col-md-3">
-				<img class="crop-img" 
-				  src="img_3.jpg" 
-				  alt="synethesizer workshop"/> 
+				<img class="crop-img" src="img_8.jpg" alt="Narrow lane" />
 			</div>
 			<div class="col-md-3">
-				<img class="crop-img" 
-				   src="img_4.jpg" 
-				   alt="City night"/> 
+				<img class="crop-img" src="img_9.jpg" alt="royal palace" />
 			</div>
 		</div>
 		<!--
@@ -59,10 +47,7 @@
 		-->
 		<div class="row">
 			<div class="col-md-12">
-				<img id="bigImage" 
-				  class="large-img" 
-				  src="img_5.jpg" 
-				  alt="graffittied building"/> 
+				<img id="bigImage" class="large-img" src="img_9.jpg" alt="royal palace" />
 			</div>
 		</div>
 	</div>
@@ -74,18 +59,12 @@
 		// src of the image we have clicked on
 		// ("this"). This loads the same
 		// image file into the big image
-		$(".crop-img").click(function(){
-			$("#bigImage").attr('src', 
+		$(".crop-img").click(function () {
+			$("#bigImage").attr('src',
 				$(this).attr('src'));
 		});
 	</script>
 
-	</body>
+</body>
+
 </html>
-
-
-
-
-
-
-
